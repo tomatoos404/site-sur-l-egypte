@@ -93,11 +93,9 @@ body {
   -webkit-tap-highlight-color: rgba(17, 17, 17, 0); }
 
   #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
+  position: absolute;
   min-width: 100%;
-  min-height: 100%;
+  margin-bottom: 40px;
 }
 
 
@@ -3058,12 +3056,12 @@ textarea.form-control-lg {
   --bs-navbar-toggler-border-radius: 99rem;
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  opacity: 60%;
   position: relative;
-  opacity: 70%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x); }
   .navbar > .container,
   .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
@@ -3071,6 +3069,12 @@ textarea.form-control-lg {
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between; }
+
+.navbar:hover {
+  opacity: 100%;
+}  
+
+
 
 .navbar-brand {
   padding-top: var(--bs-navbar-brand-padding-y);
@@ -3082,6 +3086,7 @@ textarea.form-control-lg {
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
     color: var(--bs-navbar-brand-hover-color); }
+
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
@@ -6369,6 +6374,7 @@ textarea.form-control-lg {
   padding: 3rem !important; }
 
 .px-0 {
+  padding-top: 50px;
   padding-right: 0 !important;
   padding-left: 0 !important; }
 
