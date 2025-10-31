@@ -534,25 +534,66 @@ progress {
   margin-right: auto;
   margin-left: auto; }
 
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media (min-width: 576px) {
+  .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   .container, .container-sm {
-    max-width: 540px; } }
+    max-width: 540px; } 
+
+}
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
-    max-width: 720px; } }
+    max-width: 720px; } 
+
+  .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  }
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px; } }
+    max-width: 960px; } 
+    
+  .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px; } }
+    max-width: 1140px; }
+
+  .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  }
 
 @media (min-width: 1680px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1600px; } }
+    max-width: 1600px; }
+
+  .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  }
 
 .row {
   --bs-gutter-x: 4vw;
@@ -3064,7 +3105,7 @@ textarea.form-control-lg {
   justify-content: center;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x); }
   .navbar > .container,
-  .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+  .navbar > , .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
@@ -3073,6 +3114,22 @@ textarea.form-control-lg {
 .navbar:hover {
   opacity: 100%;
 }  
+
+.navbar a {
+width: 100px;
+
+}
+
+.container-fluid{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo_pyramide{
+  width: 60px;
+  height: 60px;
+}
 
 
 
@@ -3188,7 +3245,8 @@ textarea.form-control-lg {
         display: flex;
         flex-grow: 0;
         padding: 0;
-        overflow-y: visible; } }
+        overflow-y: visible; }
+}
 
 @media (min-width: 768px) {
   .navbar-expand-md {
