@@ -97,6 +97,11 @@ body {
   margin-bottom: 40px;
 }
 
+.py-vh-2 img{
+  width: 500px;
+  height: 400px;
+}
+
 footer .container{
   display: flex;
   justify-content: center;
