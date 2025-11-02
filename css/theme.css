@@ -109,6 +109,10 @@ footer .container a{
 }
 
 
+.card h2{
+  color: white;
+}
+
 
 .container .offcanvas-body{
 display: flex;
