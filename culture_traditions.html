@@ -1,6 +1,21 @@
 <!doctype html>
+<!--
+  Page sur la culture et les traditions égyptiennes
+  Cette page présente les aspects culturels et traditionnels de l'Égypte moderne,
+  mettant en valeur la vie familiale, les arts, la musique et la gastronomie.
+  La page utilise Bootstrap 5 pour la mise en page et AOS pour les animations.
+-->
 <html class="h-100" lang="fr">
 
+<!-- 
+  En-tête de la page
+  Contient :
+  - Les métadonnées (charset, viewport, description)
+  - Les liens vers Bootstrap 5 CSS et JS
+  - Les icônes du site
+  - Les polices personnalisées Inter
+  - Les feuilles de style personnalisées
+-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -19,8 +34,14 @@
   <link rel="stylesheet" href="./css/theme.css">
   
 
+  <!-- 
+    Définition des polices personnalisées
+    Utilise la police Inter dans différentes graisses (300, 400, 500, 700)
+    Optimisé pour le chargement avec font-display: swap
+    Supporte les formats WOFF2 et WOFF pour une large compatibilité
+  -->
   <style>
-    /* inter-300 - latin */
+    /* inter-300 - latin - Police légère pour le texte secondaire */
     @font-face {
       font-family: 'Inter';
       font-style: normal;
@@ -74,10 +95,23 @@
 
 </head>
 
+<!-- 
+  Corps de la page avec fond noir et texte blanc
+  Utilise Bootstrap ScrollSpy pour la navigation fluide
+  Classes appliquées :
+  - bg-black : fond noir
+  - text-white : texte blanc
+  - mt-0 : pas de marge supérieure
+-->
 <body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
 
   <div class="container">
-      <nav class="navbar bg-body-tertiary fixed-top">
+      <!-- 
+        Barre de navigation fixe
+        - Utilise le composant Navbar de Bootstrap
+        - Contient le logo et le menu burger pour mobile
+        - Menu offcanvas responsive
+      -->
         <div class="container-fluid">
     <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
       <img class="logo_pyramide" src="./img/pyramide.png" alt="logo pyramide">
@@ -120,8 +154,20 @@
 </nav>
     </div>
 
+  <!-- 
+    Contenu principal de la page
+    Structure :
+    1. Section d'en-tête avec titre et introduction
+    2. Image principale de la culture égyptienne
+    3. Sections thématiques sur la famille, les arts et la cuisine
+    Chaque section utilise :
+    - Grille Bootstrap pour la mise en page
+    - Animations AOS pour les effets visuels
+    - Composants personnalisés pour le style
+  -->
   <main>
     <div class="container">
+      <!-- Section titre et introduction avec animation fade-up -->
       <div class="row d-flex justify-content-center py-vh-5 pb-0">
         <div class="col-12 col-lg-10 col-xl-8">
           <div class="row">
@@ -188,6 +234,17 @@ On retrouve aussi les célèbres Ta’ameya (falafels) et de nombreux plats vég
 
   </main>
 
+  <!-- 
+    Pied de page
+    Contient :
+    - Logo du site
+    - Liens de navigation organisés en colonnes
+    - Mentions légales et crédits
+    Utilise :
+    - Grille Bootstrap pour la mise en page
+    - Classes personnalisées pour le style
+    - Bordures pour la séparation visuelle
+  -->
   <footer class="bg-black border-top border-dark">
     <div class="container py-vh-4 text-secondary fw-lighter">
       <div class="row">
@@ -260,13 +317,26 @@ On retrouve aussi les célèbres Ta’ameya (falafels) et de nombreux plats vég
 
 
 
+  <!-- Scripts JavaScript pour les fonctionnalités dynamiques -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/aos.js"></script>
+  <!-- 
+    Configuration des animations AOS (Animate On Scroll)
+    - Définit la durée des animations à 800ms
+    - S'applique aux éléments avec l'attribut data-aos
+  -->
   <script>
     AOS.init({
       duration: 800, // values from 0 to 3000, with step 50ms
     });
   </script>
+  <!-- 
+    Script de gestion du comportement de la barre de navigation
+    Fonctionnalités :
+    - Détecte la position de défilement
+    - Ajoute/supprime les classes pour l'effet visuel lors du défilement
+    - Ajoute une ombre et un effet de transition
+  -->
   <script>
     let scrollpos = window.scrollY;
     const header = document.querySelector(".navbar");

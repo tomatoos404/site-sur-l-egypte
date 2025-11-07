@@ -1,10 +1,19 @@
 
-    .body-contacte {
+    /* Styles pour la page de contact */
+/* 
+  Styles principaux de la page de contact
+  Définit :
+  - L'arrière-plan sombre
+  - La couleur du texte claire
+  - La police par défaut
+*/
+.body-contacte {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
     }
-    .container_contacte {
+    /* Style du conteneur principal de la page de contact */
+.container_contacte {
     max-width: 800px;
     color: white;
     padding: 20px;

@@ -1,7 +1,13 @@
+/* Variables CSS globales pour les couleurs et dimensions */
+/* 
+  Variables CSS globales
+  Définition des couleurs principales et des dimensions de base
+  Utilisées pour maintenir une cohérence visuelle dans tout le CV
+*/
 :root{
-  --bordeau: black;   
-  --bordeau-light: black;
-  --yellow: #F2C94C;   
+  --bordeau: black;   /* Couleur principale pour les titres et accents */
+  --bordeau-light: black;  /* Version plus claire pour les éléments secondaires */
+  --yellow: #F2C94C;   /* Couleur d'accent pour les surbrillances */
   --bg: black;
   --muted: #666;
   --max-width: 1000px;
@@ -9,8 +15,10 @@
   --gap: 18px;
 }
 
+/* Styles de base et réinitialisation */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+/* Style général du corps de la page */
 body{
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: linear-gradient(180deg, #fff 0%, var(--bg) 100%);
@@ -21,7 +29,13 @@ body{
   padding-top:84px; /* space for fixed header on small screens */
 }
 
-/* Layout container */
+/* 
+  Layout container 
+  Conteneur principal qui :
+  - Limite la largeur maximale du contenu
+  - Centre le contenu horizontalement
+  - Ajoute des marges latérales responsives
+*/
 .container{
   width:90%;
   max-width:var(--max-width);
